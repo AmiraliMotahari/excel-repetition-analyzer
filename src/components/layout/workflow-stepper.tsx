@@ -49,7 +49,7 @@ export function WorkflowStepper() {
 
   return (
     <nav aria-label="Workflow progress" className="w-full">
-      <ol className="flex flex-wrap items-center gap-x-2 gap-y-2 sm:gap-x-4">
+      <ol className="flex flex-wrap justify-center items-center gap-x-2 gap-y-2 sm:gap-x-4">
         {STEPS.map((s, i) => {
           const state = stepState(s.id, i)
           const clickable = isClickable(s.id) && reached(s.id)

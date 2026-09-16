@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test"
 
 const DEFAULT_BASE_URL = "http://localhost:3000"
 
-const EXCEL_FIXTURES = {
+const EXCEL_FIXTURES: Record<string, string> = {
   SIMPLE: "fixtures/test-simple.xlsx",
   COMPLEX: "fixtures/test-complex.xlsx",
   EDGE_CASES: "fixtures/test-edge-cases.xlsx",
